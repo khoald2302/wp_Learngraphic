@@ -30,7 +30,7 @@
     body.remove-margin-top{
         #zo-header-navigation .main-navigation .menu-main-menu {
             > li {
-                border-bottom: 1px solid transparent;
+            
                 &:hover, &.current-menu-item, &.current-menu-parent, &.current-menu-ancestor{
                     border-bottom-color: $primary_color;
                     > a {
@@ -63,7 +63,7 @@
         }
         .menu-main-menu {
             > li {
-                margin: 0 10px -1px;
+                margin: 0 10px 0px;
                 font-size: 12px;
                 font-weight: 400;
                 vertical-align: top;
@@ -410,6 +410,139 @@
 */
 
 
+/*var*/
+$main: #ff9933;
+$white:#fff;
+$black:#000;
+/*************** Top Menu ********************/
+
+#zo-header-top{
+    	background-color:#3d4344!important; 
+    ul{
+        padding: 0px;
+        margin: 0px;
+        li{
+            display: inline-block;
+            height: 44px;
+            margin-right: 20px;
+            position: relative;
+            &.menu-item:hover {
+                    &:after{
+                            position: absolute;
+                            bottom: 5px;
+                            content: '';
+                            width: 100%;
+                            height: 7px;
+                            padding-top: 4px;
+                            left: 0;
+                            bottom: -7px;
+                            background-color: #f93;
+                            z-index: 100;
+                          
+                    }
+                  
+                }
+                 
+            a{
+                color: #fff;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 50px;
+                padding: 13px 0px;
+                &:hover{
+                 
+                }
+                
+                    
+                
+            }
+        }
+           &.login-right{
+                text-align: right;
+        
+           li {
+                display: inline-block;
+                margin-bottom: 0px;
+                margin-right: 10px;
+                height: 44px;
+                margin-top:4px;
+                padding-top: 5px;
+               
+               a{
+                color: #fff;
+                font-size: 15px;
+                margin-bottom: 0px;
+                padding: 4px 27px;
+                line-height: 44px;
+                background-color: #0971f2;
+                border-radius: 3px;
+               }
+           }
+         
+        
+    }
+    
+    }
+ 
+   
+}
+
+
+@media screen and (max-width: 995px) {
+	 .menu-menu-top-container{
+		text-align: center!important;
+	}
+	ul.login-right{
+		text-align: center!important;
+	}
+
+
+}
+@media screen and (max-width: 768px) {
+	 .menu-menu-top-container{
+		text-align: center!important;
+	}
+	ul.login-right{
+		text-align: center!important;
+	}
+
+
+}
+
+/*
+-----> End Top Menu
+*/
+
+
+
+/********** Menu *************/
+#zo-header {
+    position: relative;
+    z-index: 10;
+    background: #fff!important;
+    &:after{ 
+        background-color: #f93;
+        content: '';
+        width: 100%;
+        height: 7px;
+        position: absolute;
+    }
+    ul{
+        li{ 
+            a{ 
+                color: #000!important;
+            }
+        }
+    }
+    
+    #zo-header-logo{
+      
+     padding: 7px 0px 4px 18px;
+    }
+}
+/*
+-----> End  Menu
+*/
 /* ==========================================================================
   End Style Main Menu
 ========================================================================== */

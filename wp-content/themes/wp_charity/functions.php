@@ -179,6 +179,8 @@ function zo_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Primary Menu', THEMENAME ) );
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menu( 'topmenu', __( 'Top Menu', THEMENAME ) );
 
 	/*
 	 * This theme supports custom background color and image,

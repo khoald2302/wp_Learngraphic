@@ -114,7 +114,9 @@ class ZoTheme_StaticCss
 
             /* Header Main */
             if(!empty($smof_data['header_height'])){
+               // var_dump($smof_data['main_logo_height']['height']); die();
                 echo "#zo-header-logo a {
+                 
                     line-height:".esc_attr($smof_data['header_height']['height']).";
                 }"."\n";
             }

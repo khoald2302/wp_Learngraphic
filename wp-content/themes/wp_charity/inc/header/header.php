@@ -10,10 +10,10 @@
 <div id="zo-header-top">
     <div class="container">
         <div class="row">
-            <?php if (is_active_sidebar('sidebar-5')) : ?>
+            <?php if (is_active_sidebar('sidebar-2')) : ?>
                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><?php dynamic_sidebar('sidebar-2'); ?></div>
             <?php endif; ?>
-            <?php if (is_active_sidebar('sidebar-5')) : ?>
+            <?php if (is_active_sidebar('sidebar-3')) : ?>
                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><?php dynamic_sidebar('sidebar-3'); ?></div>
             <?php endif; ?>
         </div>
